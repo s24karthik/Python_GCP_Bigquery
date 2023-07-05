@@ -9,7 +9,7 @@ def bq_test(client):
 def bq_retrieve(client):
     query = input("Enter the query: ")
     df = client.query(query).to_dataframe()
-    df.to_json(path_or_buf='C:/Users/KS59/Documents/IDEA/Python Codes/Github Codes/Python GCP Bigquery/sink/data_result.json', orient='table')
+    df.to_json(path_or_buf='< SINK RESULT_DATA PATH >', orient='table')
     print("Data Fetched")
 
 def extract_csv(client):
